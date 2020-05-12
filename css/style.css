@@ -1,3 +1,9 @@
-h1 {
-    border: 1px solid black;
+header {
+    background: beige;
+}
+main {
+    background: pink;
+}
+footer {
+    background: skyblue;
 }
