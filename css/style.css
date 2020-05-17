@@ -1,9 +1,48 @@
-header {
-    background: beige;
+body {
+    margin: 0;
 }
+/* header */
+.header {
+    background: gray;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header > #logo_img {
+    width: 300px;
+    height: 100px;
+    background: no-repeat top/55% url(../asset/img/logo-light.png);
+}
+
+.header > .nav_bar {
+    width: 60%
+}
+
+.header > .nav_bar > ul {
+    list-style: none;
+
+}
+.header > .nav_bar > ul >li{
+    display: inline-block;
+    width: 100px
+}
+.header > .nav_bar > ul >li > *{
+    display: none;
+}
+
+.header > .icons {
+    width: 100px;
+    height: 100px;
+}
+
+/* main */
 main {
     background: pink;
 }
+
+/* footer */
 footer {
     background: skyblue;
 }
