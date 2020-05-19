@@ -1,50 +1,56 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 /* header */
 .header {
-    background: gray;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+  background: gray;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header > #logo_img {
-    width: 220px;
-    border: 1px solid black;
-    background: no-repeat center/75% url(../asset/img/logo-light.png);
+  width: 236px;
+  background: no-repeat center/70% url(../asset/img/logo-light.png);
 }
 
 .header > .nav_bar {
-    width: 60%
+  width: 50%;
 }
 
-.header > .nav_bar > ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+.header > .nav_bar .top_menu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
 
+.top_menu > li {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
 }
-.header > .nav_bar > ul > li{
-    display: inline;
+
+.header > .nav_bar > ul > li {
+  display: inline;
 }
-.header > .nav_bar > ul >li > *{
-    display: none;
+.header > .nav_bar > ul > li > * {
+  display: none;
 }
 
 .header > .icons {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
 
 /* main */
 main {
-    background: pink;
+  background: pink;
 }
 
 /* footer */
 footer {
-    background: skyblue;
+  background: skyblue;
 }
