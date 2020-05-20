@@ -12,6 +12,6 @@ html/css를 익히기 위한 repository
 
 #### header 구성
 
-- div#logo_img
+- div#logo
 - ul.nav_bar
-- div.icons
+- ul.icons
