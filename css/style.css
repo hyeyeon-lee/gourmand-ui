@@ -3,46 +3,43 @@ body {
 }
 /* header */
 .header {
-  background: gray;
+  background: rgba(0, 0, 0, 0.2);
   height: 10vh;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header > #logo_img {
-  width: 236px;
-  background: no-repeat center/70% url(../asset/img/logo-light.png);
+.logo_img {
+  padding-left: 38px;
+  width: 163px;
 }
 
-.header > .nav_bar {
-  width: 50%;
-}
-
-.header > .nav_bar .top_menu {
-  padding: 0;
+.nav_bar .top_menu {
+  padding-left: 0;
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-.top_menu > li {
-  border: 1px solid black;
-  padding: 10px;
-  width: 200px;
+.nav_bar .top_menu > li > a {
+  padding: 0 30px;
+  color: gray;
+  text-decoration: none;
 }
 
-.header > .nav_bar > ul > li {
-  display: inline;
-}
-.header > .nav_bar > ul > li > * {
+.nav_bar > ul > li > ul {
   display: none;
 }
 
-.header > .icons {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
+.icons {
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.icons > li {
+  display: inline;
 }
 
 /* main */
