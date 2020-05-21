@@ -21,11 +21,26 @@ body {
   display: flex;
   justify-content: center;
 }
+.nav_bar .top_menu > li {
+  padding: 0 30px;
+}
 
 .nav_bar .top_menu > li > a {
-  padding: 0 30px;
-  color: gray;
+  color: #939393;
   text-decoration: none;
+}
+
+.nav_bar .top_menu > li > a:hover {
+  color: #ffffff;
+}
+.nav_bar .top_menu > li > a:hover::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 7px;
+  width: 70%;
+  margin: 0 auto;
+  outline: 2px solid #c5b358;
 }
 
 .nav_bar > ul > li > ul {
@@ -34,12 +49,14 @@ body {
 
 .icons {
   padding-left: 0;
+  padding-right: 38px;
   list-style-type: none;
   font-size: 20px;
 }
 
 .icons > li {
   display: inline;
+  padding: 0 10px;
 }
 
 /* main */
