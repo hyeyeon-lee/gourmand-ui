@@ -4,10 +4,12 @@ body {
 /* header */
 .header {
   background: rgba(0, 0, 0, 0.2);
-  height: 10vh;
+  width: 100%;
+  height: 94px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
 }
 
 .logo_img {
@@ -57,11 +59,25 @@ body {
 .icons > li {
   display: inline;
   padding: 0 10px;
+  color: #fff;
 }
 
 /* main */
 main {
   background: pink;
+}
+
+aside {
+  display: none;
+}
+
+section.slide_image {
+  top: 0;
+  background-image: url(../asset/img/h1-slide-1-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
 }
 
 /* footer */
