@@ -73,11 +73,25 @@ aside {
 
 section.slide_image {
   top: 0;
-  background-image: url(../asset/img/h1-slide-1-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: no-repeat center center
+    url(../asset/img/h1-slide-1-background.jpg);
   width: 100%;
   height: 100vh;
+}
+
+section article.first_slide {
+  font-size: 4em;
+  color: #fff;
+  height: 100vh;
+}
+
+.first_slide div.center_title {
+  text-align: center;
+}
+
+section article:not(.first_slide) {
+  /* 임시 */
+  display: none;
 }
 
 /* footer */
