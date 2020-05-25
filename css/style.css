@@ -80,13 +80,25 @@ section.slide_image {
 }
 
 section article.first_slide {
-  font-size: 4em;
   color: #fff;
-  height: 100vh;
 }
 
+.first_slide div.material {
+  /* 임시 */
+  display: none;
+}
 .first_slide div.center_title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.first_slide div.center_title h1 {
+  margin: 0;
+  font-size: 4em;
+  color: #fff;
 }
 
 section article:not(.first_slide) {
