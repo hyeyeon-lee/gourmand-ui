@@ -30,6 +30,7 @@ body {
 .nav_bar .top_menu > li > a {
   color: #939393;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav_bar .top_menu > li > a:hover {
@@ -97,8 +98,30 @@ section article.first_slide {
 
 .first_slide div.center_title h1 {
   margin: 0;
-  font-size: 4em;
+  font-size: 4vw;
   color: #fff;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 110px;
+  border: 1px solid #c5b358;
+}
+
+.slide_button {
+  width: 160px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #c5b358;
+  color: #fff;
+  border: 0;
+}
+
+.slide_button:hover {
+  background-color: #fff;
+  color: #c5b358;
+  cursor: pointer;
 }
 
 section article:not(.first_slide) {
