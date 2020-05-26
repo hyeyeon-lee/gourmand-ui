@@ -105,8 +105,19 @@ section article.first_slide {
 }
 
 .divider {
-  width: 110px;
   border: 1px solid #c5b358;
+}
+
+.w50 {
+  width: 50px;
+}
+
+.w110 {
+  width: 110px;
+}
+
+.center {
+  text-align: center;
 }
 
 .slide_button {
@@ -124,9 +135,32 @@ section article.first_slide {
   cursor: pointer;
 }
 
-section article:not(.first_slide) {
-  /* 임시 */
+/* 임시 */
+.hide {
   display: none;
+}
+
+.who_section {
+  background-color: #fff;
+}
+
+.who_section .intro_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  padding: 0 20px;
+  width: 25%;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box h3 {
+  text-transform: uppercase;
 }
 
 /* footer */
