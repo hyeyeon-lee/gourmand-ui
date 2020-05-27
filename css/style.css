@@ -142,6 +142,8 @@ section article.first_slide {
 
 .who_section {
   background-color: #fff;
+  padding: 20px 0;
+  margin: 20px 0;
 }
 
 .who_section .intro_container {
@@ -152,7 +154,7 @@ section article.first_slide {
 
 .box {
   padding: 0 20px;
-  width: 25%;
+  width: 22%;
 }
 
 .box img {
@@ -161,6 +163,10 @@ section article.first_slide {
 
 .box h3 {
   text-transform: uppercase;
+}
+
+.box > p {
+  color: #939393;
 }
 
 /* footer */
