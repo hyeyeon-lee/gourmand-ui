@@ -169,6 +169,49 @@ section article.first_slide {
   color: #939393;
 }
 
+.skills_section {
+  background-image: url(../asset/img/h1-slide-1-background.jpg);
+  padding: 50px 30px;
+}
+
+.skills_section * {
+  color: #fff;
+}
+
+.skills_section div > p {
+  font-size: 12px;
+  display: inline;
+}
+
+.skills_section div > p:last-of-type {
+  float: right;
+}
+
+.skills_section .skills_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills_section .skill_part {
+  width: 40%;
+}
+
+.skills_section .skill_part:first-child {
+  margin-right: 30px;
+}
+
+.skill_part .skill_level {
+  width: 100%;
+  background-color: rgba(197, 179, 88);
+  height: 5px;
+  margin-top: 20px;
+}
+
+.skill_part div {
+  margin-top: 20px;
+}
+
 /* footer */
 footer {
   background: skyblue;
