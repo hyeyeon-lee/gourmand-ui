@@ -140,21 +140,28 @@ section article.first_slide {
   display: none;
 }
 
+.section {
+  width: 100wh;
+}
+
 .who_section {
+  height: 70vh;
+  margin: 0 auto;
+  padding: 100px 40px;
   background-color: #fff;
-  padding: 20px 0;
-  margin: 20px 0;
 }
 
 .who_section .intro_container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  width: 70vw;
+  padding-top: 70px;
+  margin: 0 auto;
 }
 
 .box {
-  padding: 0 20px;
-  width: 22%;
+  width: 23vw;
 }
 
 .box img {
@@ -171,7 +178,9 @@ section article.first_slide {
 
 .skills_section {
   background-image: url(../asset/img/h1-slide-1-background.jpg);
-  padding: 50px 30px;
+  height: 34vh;
+  margin: 0 auto;
+  padding: 100px 40px;
 }
 
 .skills_section * {
