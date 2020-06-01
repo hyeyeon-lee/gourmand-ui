@@ -223,7 +223,6 @@ section article.first_slide {
 
 .seasonal_section {
   height: 80vh;
-  margin: 0 auto;
   padding: 100px 40px;
   background-color: #fff;
 }
@@ -231,13 +230,15 @@ section article.first_slide {
 .seasonal_section .season_box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .season_box img {
-  margin-right: 20px;
-  width: 600px;
+  width: 85%;
 }
+
 /* footer */
 footer {
   background: skyblue;
