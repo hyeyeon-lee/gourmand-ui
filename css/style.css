@@ -239,6 +239,14 @@ section article.first_slide {
   width: 85%;
 }
 
+.season_part .season_price {
+  display: inline;
+  font-size: 100px;
+}
+
+.season_part .season_txt {
+}
+
 /* footer */
 footer {
   background: skyblue;
