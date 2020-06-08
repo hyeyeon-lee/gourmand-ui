@@ -144,14 +144,16 @@ section article.first_slide {
   width: 100wh;
 }
 
-.who_section {
+.who_section,
+.team_section {
   height: 70vh;
   margin: 0 auto;
   padding: 100px 40px;
   background-color: #fff;
 }
 
-.who_section .intro_container {
+.who_section .intro_container,
+.team_section .members_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -280,6 +282,13 @@ section article.first_slide {
   grid-row: 2 / 3;
   background: no-repeat url(../asset/img/h1-gallery-img-5.jpg);
   background-size: cover;
+}
+
+.team_section .members_container .member_info {
+  text-align: center;
+}
+.team_section .members_container img {
+  border-radius: 50%;
 }
 
 /* footer */
