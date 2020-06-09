@@ -291,6 +291,25 @@ section article.first_slide {
   border-radius: 50%;
 }
 
+.last_img_section {
+  background: no-repeat url(../asset/img/h1-parallax-3.jpg);
+  height: 65vh;
+}
+
+.last_img_box {
+  width: 33%;
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 7%;
+}
+
+.intro_txt {
+  color: #a4a4a4;
+}
+
+.intro_name {
+  color: #c5b358;
+}
 /* footer */
 footer {
   background: skyblue;
