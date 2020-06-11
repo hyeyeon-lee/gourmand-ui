@@ -145,7 +145,8 @@ section article.first_slide {
 }
 
 .who_section,
-.team_section {
+.team_section,
+.story_section {
   height: 70vh;
   margin: 0 auto;
   padding: 100px 40px;
