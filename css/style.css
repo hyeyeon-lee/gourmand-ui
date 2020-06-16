@@ -358,9 +358,32 @@ section article.first_slide {
   justify-content: space-around;
 }
 
+.story_box .food:not(.active) {
+  display: none;
+}
+
 .story_box img {
   width: 430px;
   padding-bottom: 30px;
+}
+
+.food {
+  position: relative;
+}
+
+.food_txt > *:not(dt) {
+  display: none;
+}
+
+.food_txt {
+  display: block;
+  position: absolute;
+  background-color: #c5b358;
+  color: #fff;
+  margin: 0;
+  bottom: 30px;
+  width: 200px;
+  padding: 20px;
 }
 
 /* footer */
