@@ -386,6 +386,13 @@ section article.first_slide {
   padding: 20px;
 }
 
+.banner {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+}
+
 /* footer */
 footer {
   background: skyblue;
