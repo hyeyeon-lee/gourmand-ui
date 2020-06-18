@@ -390,7 +390,22 @@ section article.first_slide {
   padding: 40px;
   display: flex;
   justify-content: space-around;
-  background: #fff;
+  background: repeating-linear-gradient(
+    -45deg,
+    #eee,
+    #eee 1px,
+    #fff 0,
+    #fff 6px
+  );
+}
+
+.banner img {
+  opacity: 0.8;
+}
+
+.banner img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* footer */
