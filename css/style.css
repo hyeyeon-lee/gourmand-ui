@@ -426,10 +426,34 @@ footer .more_info dl {
 footer .more_info dl dt {
   font-weight: bold;
   margin: 30px 0;
+  text-transform: uppercase;
 }
 footer .more_info dl dd {
   color: rgba(255, 255, 255, 0.4);
   width: 240px;
   word-break: break-all;
   margin: 10px 0;
+  font-size: 15px;
+}
+footer .more_info dl dd ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .more_info dl dd li {
+  margin: 10px 0;
+}
+footer .more_info dl dd li:hover {
+  color: #c5b358;
+  cursor: pointer;
+}
+
+footer .more_info .post_img img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.map_img {
+  width: 300px;
 }
