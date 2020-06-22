@@ -453,6 +453,20 @@ footer .more_info .post_img img {
   height: 60px;
   object-fit: cover;
 }
+footer .more_info .post_img div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .more_info .post_img div p {
+  margin-bottom: 0;
+}
+
+footer .more_info .post_img div p:hover,
+footer .more_info .post_img div strong:hover {
+  color: #c5b358;
+  cursor: pointer;
+}
 
 .map_img {
   width: 300px;
