@@ -471,3 +471,14 @@ footer .more_info .post_img div strong:hover {
 .map_img {
   width: 300px;
 }
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright .sns_box {
+  display: inline;
+}
