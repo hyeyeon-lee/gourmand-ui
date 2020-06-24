@@ -448,6 +448,11 @@ footer .more_info dl dd li:hover {
   cursor: pointer;
 }
 
+.clock {
+  color: #c5b358;
+  margin-right: 20px;
+}
+
 footer .more_info .post_img img {
   width: 90px;
   height: 60px;
@@ -479,6 +484,11 @@ footer .more_info .post_img div strong:hover {
   justify-content: space-between;
 }
 
-.copyright .sns_box {
+.copyright p {
   display: inline;
+  color: #999999;
+}
+
+.copyright .sns_box > * {
+  margin-right: 20px;
 }
