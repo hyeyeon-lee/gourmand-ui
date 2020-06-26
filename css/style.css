@@ -1,5 +1,12 @@
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.sub_msg {
+  font-family: "Alex Brush", cursive;
+  font-size: 2.5em;
+  color: rgba(0, 0, 0, 0.6);
 }
 /* header */
 .header {
@@ -78,6 +85,10 @@ section.slide_image {
     url(../asset/img/h1-slide-1-background.jpg);
   width: 100%;
   height: 100vh;
+}
+
+section.slide_image .sub_msg {
+  color: #fff;
 }
 
 section article.first_slide {
