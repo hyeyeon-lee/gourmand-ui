@@ -71,12 +71,14 @@ body {
 }
 
 /* main */
-main {
-  background: pink;
-}
-
 aside {
-  display: none;
+  /* display: none; */
+  width: 380px;
+  height: 100vh;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  padding: 50px;
 }
 
 section.slide_image {
