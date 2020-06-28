@@ -18,6 +18,7 @@ html/css를 익히기 위한 repository
 
 #### main 구성
 
+- aside: sidebar 영역
 - section 1: slide-image 영역
 - section 2: who we are 영역
 - section 3: skills 영역
@@ -27,3 +28,8 @@ html/css를 익히기 위한 repository
 - section 7: single 영역
 - section 8: our story 영역
 - section 9: banner 영역
+
+#### footer 구성
+
+- div: more_info 영역
+- div: copyright 영역
