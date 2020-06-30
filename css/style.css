@@ -79,6 +79,27 @@ aside {
   background-color: #fff;
   right: 0;
   padding: 50px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #eee,
+    #eee 1px,
+    #fff 0,
+    #fff 6px
+  );
+}
+
+aside * {
+  margin-bottom: 30px;
+  color: #999;
+  font-size: 14px;
+}
+
+aside article:not(:last-child) {
+  border-bottom: 1px solid #c5b358;
+}
+
+aside .feed {
+  height: 40px;
 }
 
 section.slide_image {
