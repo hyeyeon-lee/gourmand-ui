@@ -72,7 +72,7 @@ body {
 
 /* main */
 aside {
-  /* display: none; */
+  display: none;
   width: 380px;
   height: 100vh;
   position: absolute;
@@ -440,6 +440,28 @@ section article.first_slide {
 .banner img:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.toolbar {
+  position: fixed;
+  right: 0;
+  top: 70%;
+}
+
+.toolbar div {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  margin-bottom: 8px;
+}
+
+.toolbar div.active {
+  width: 120px;
+}
+
+.toolbar .toolbar_related {
+  background-color: #ef2853;
+  color: #fff;
 }
 
 /* footer */
