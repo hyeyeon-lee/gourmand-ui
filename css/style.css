@@ -548,3 +548,16 @@ footer .more_info .post_img div strong:hover {
 .copyright .sns_box > * {
   margin-right: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    background: #fff;
+    height: 70px;
+  }
+  .nav_bar {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+}
