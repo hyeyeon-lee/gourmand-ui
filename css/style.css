@@ -214,7 +214,6 @@ section article.first_slide {
 
 .skills_section {
   background-image: url(../asset/img/h1-slide-1-background.jpg);
-  height: 34vh;
   margin: 0 auto;
   padding: 100px 40px;
 }
@@ -258,7 +257,6 @@ section article.first_slide {
 }
 
 .seasonal_section {
-  height: 80vh;
   padding: 100px 40px;
   background-color: #fff;
 }
@@ -327,7 +325,6 @@ section article.first_slide {
 
 .last_img_section {
   background: no-repeat url(../asset/img/h1-parallax-3.jpg);
-  height: 65vh;
 }
 
 .last_img_box {
