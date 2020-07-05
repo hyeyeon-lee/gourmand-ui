@@ -558,3 +558,14 @@ footer .more_info .post_img div strong:hover {
     display: none;
   }
 }
+@media screen and (max-width: 1199px) {
+  .who_section .intro_container {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .who_section .intro_container .box {
+    width: 100%;
+  }
+}
