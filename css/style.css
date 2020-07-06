@@ -19,6 +19,10 @@ body {
   position: absolute;
 }
 
+.header .hide {
+  display: none;
+}
+
 .logo_img {
   padding-left: 38px;
   width: 163px;
@@ -550,7 +554,28 @@ footer .more_info .post_img div strong:hover {
   .header {
     background: #fff;
     height: 70px;
+    display: block;
   }
+
+  .header i.hide {
+    display: inline;
+    position: relative;
+    top: 25px;
+    left: 80px;
+  }
+
+  .logo_img {
+    display: none;
+  }
+
+  .logo_img.hide {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    top: 10px;
+    position: relative;
+  }
+
   .nav_bar {
     display: none;
   }
