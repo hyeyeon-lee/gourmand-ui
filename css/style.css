@@ -594,3 +594,12 @@ footer .more_info .post_img div strong:hover {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .skills_section .skills_box {
+    display: block;
+  }
+  .skills_section .skill_part {
+    width: 100%;
+  }
+}
