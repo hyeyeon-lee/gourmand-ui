@@ -602,4 +602,11 @@ footer .more_info .post_img div strong:hover {
   .skills_section .skill_part {
     width: 100%;
   }
+
+  .seasonal_section .season_box {
+    display: block;
+  }
+  .seasonal_section .season_part img {
+    width: 100%;
+  }
 }
