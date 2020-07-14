@@ -260,26 +260,10 @@ section article.first_slide {
   margin-top: 20px;
 }
 
-.seasonal_section {
-  padding: 100px 40px;
-  background-color: #fff;
-}
-
-.seasonal_section .season_box {
+.season_image,
+.season_text {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 88%;
-  margin: 0 auto;
-}
-
-.season_box img {
-  width: 85%;
-}
-
-.season_part .season_price {
-  display: inline;
-  font-size: 100px;
+  justify-content: center;
 }
 
 .gallery_container {
@@ -603,10 +587,11 @@ footer .more_info .post_img div strong:hover {
     width: 100%;
   }
 
-  .seasonal_section .season_box {
+  .seasonal_section .season_image,
+  .seasonal_section .season_text {
     display: block;
   }
-  .seasonal_section .season_part img {
-    width: 100%;
+  .seasonal_section .season_image img {
+    width: 90%;
   }
 }
