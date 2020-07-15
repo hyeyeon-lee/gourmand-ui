@@ -266,6 +266,38 @@ section article.first_slide {
   justify-content: center;
 }
 
+.season_image img,
+.season_intro {
+  padding: 0 20px;
+  width: 630px;
+}
+
+.season_intro {
+  display: table;
+}
+
+.season_text {
+  padding: 30px 0 150px;
+}
+
+.season_price {
+  float: left;
+}
+.season_price span {
+  font-size: 120px;
+}
+
+.season_txt {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 40px;
+}
+
+.season_txt p:nth-child(2) {
+  color: #999;
+  width: 300px;
+}
+
 .gallery_container {
   width: 100vw;
 }
