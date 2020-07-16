@@ -632,3 +632,26 @@ footer .more_info .post_img div strong:hover {
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .gallery .class1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .gallery .class2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .gallery .class3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .gallery .class4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .gallery .class5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
