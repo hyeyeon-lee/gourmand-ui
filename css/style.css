@@ -631,6 +631,18 @@ footer .more_info .post_img div strong:hover {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .team_section .members_container {
+    display: block;
+  }
+
+  .last_img_box {
+    margin: 0 auto;
+    width: auto;
+  }
+  .intro_txt {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
