@@ -611,6 +611,15 @@ footer .more_info .post_img div strong:hover {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .story_box {
+    width: 100%;
+  }
+  .food > * {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .skills_section .skills_box {
     display: block;
