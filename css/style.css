@@ -438,6 +438,7 @@ section article.first_slide {
 }
 
 .banner {
+  overflow: hidden;
   padding: 40px;
   display: flex;
   justify-content: space-around;
@@ -450,11 +451,11 @@ section article.first_slide {
   );
 }
 
-.banner img {
+.banner div {
   opacity: 0.8;
 }
 
-.banner img:hover {
+.banner div:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -616,6 +617,15 @@ footer .more_info .post_img div strong:hover {
     width: 100%;
   }
   .food > * {
+    width: 50%;
+  }
+
+  footer .more_info {
+    display: inline-block;
+    width: 100vw;
+  }
+  footer .more_info dl {
+    float: left;
     width: 50%;
   }
 }
