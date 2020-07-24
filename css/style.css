@@ -622,11 +622,17 @@ footer .more_info .post_img div strong:hover {
 
   footer .more_info {
     display: inline-block;
-    width: 100vw;
   }
   footer .more_info dl {
     float: left;
-    width: 50%;
+    width: 45%;
+  }
+  footer .more_info dl dd {
+    width: auto;
+  }
+
+  footer .more_info dl:nth-child(odd) {
+    margin-right: 20px;
   }
 }
 
