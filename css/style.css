@@ -268,8 +268,7 @@ section article.first_slide {
 
 .season_image img,
 .season_intro {
-  padding: 0 20px;
-  width: 630px;
+  width: 95%;
 }
 
 .season_intro {
@@ -652,7 +651,7 @@ footer .more_info .post_img div strong:hover {
     display: block;
   }
   .seasonal_section .season_image div {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -690,5 +689,10 @@ footer .more_info .post_img div strong:hover {
   .gallery .class5 {
     grid-row: 7;
     grid-column: 1/4;
+  }
+
+  footer .more_info dl {
+    display: block;
+    width: 100vw;
   }
 }
