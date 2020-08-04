@@ -266,8 +266,7 @@ section article.first_slide {
   justify-content: center;
 }
 
-.season_image img,
-.season_intro {
+.season_image img {
   width: 95%;
 }
 
@@ -670,6 +669,10 @@ footer .more_info .post_img div strong:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .season_txt {
+    padding-right: 0;
+  }
+
   .gallery .class1 {
     grid-row: 1;
     grid-column: 1/4;
@@ -690,9 +693,29 @@ footer .more_info .post_img div strong:hover {
     grid-row: 7;
     grid-column: 1/4;
   }
+  footer .more_info {
+    padding: 40px;
+  }
 
   footer .more_info dl {
     display: block;
-    width: 100vw;
+    width: 100%;
+  }
+
+  .map_img {
+    width: 100%;
+  }
+
+  footer .more_info dl:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .copyright {
+    display: block;
+  }
+
+  .copyright > div {
+    text-align: center;
+    margin: 20px 0;
   }
 }
