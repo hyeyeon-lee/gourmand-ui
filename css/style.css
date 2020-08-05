@@ -260,35 +260,39 @@ section article.first_slide {
   margin-top: 20px;
 }
 
-.season_image,
-.season_text {
-  display: flex;
-  justify-content: center;
+.season_image {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.season_image div {
+  display: inline-block;
+  text-align: center;
 }
 
 .season_image img {
   width: 95%;
+  max-width: 635px;
 }
 
-.season_intro {
-  display: table;
+.season_intro > * {
+  display: inline-block;
 }
 
 .season_text {
   padding: 30px 0 150px;
+  display: flex;
+  justify-content: center;
 }
 
 .season_price {
-  float: left;
 }
 .season_price span {
   font-size: 120px;
+  margin-right: 40px;
 }
 
 .season_txt {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0 40px;
 }
 
 .season_txt p:nth-child(2) {
