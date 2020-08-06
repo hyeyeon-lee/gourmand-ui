@@ -36,6 +36,7 @@ body {
 }
 .nav_bar .top_menu > li {
   padding: 0 30px;
+  position: relative;
 }
 
 .nav_bar .top_menu > li > a {
@@ -57,7 +58,33 @@ body {
   outline: 2px solid #c5b358;
 }
 
-.nav_bar > ul > li > ul {
+.sub_menu {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #999;
+  padding: 30px;
+  top: 56px;
+  left: -20px;
+  width: 250px;
+}
+
+.sub_menu * {
+  list-style-type: none;
+}
+
+.sub_menu > li {
+  margin: 10px;
+}
+
+.sub_menu > li:hover {
+  color: #c5b358;
+}
+.sub_menu > li:hover::before {
+  content: "─";
+}
+
+.sub_menu > li > ul {
   display: none;
 }
 
