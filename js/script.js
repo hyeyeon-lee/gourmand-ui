@@ -1,8 +1,8 @@
-const topMenu = document.querySelector(".top_menu>*");
-//console.log(topMenu);
+const topMenu = document.querySelector("ul.top_menu");
 topMenu.addEventListener("mouseover", toggleMenu);
+topMenu.addEventListener("mouseleave", toggleMenu);
 
 function toggleMenu(e) {
-  const subMenu = document.querySelector(".sub_menu");
+  const subMenu = e.target.querySelector(".sub_menu");
   subMenu.classList.toggle("hide");
 }
