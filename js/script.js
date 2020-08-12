@@ -1,6 +1,10 @@
 const topMenu = document.querySelector("ul.top_menu");
-topMenu.addEventListener("mouseover", toggleMenu);
-topMenu.addEventListener("mouseleave", toggleMenu);
+
+const topMenuList = topMenu.querySelectorAll('.top_menu > li');
+topMenuList.forEach((item) => {
+  item.addEventListener("mouseover", toggleMenu);
+  item.addEventListener("mouseleave", toggleMenu);
+})
 
 function toggleMenu(e) {
   const subMenu = e.target.querySelector(".sub_menu");
