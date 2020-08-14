@@ -39,6 +39,9 @@ body {
 .nav_bar .top_menu > li {
   padding: 0 30px;
   position: relative;
+}
+
+.nav_bar .top_menu > li > a {
   color: #939393;
   text-decoration: none;
   text-transform: uppercase;
@@ -47,10 +50,10 @@ body {
   padding: 38px 0;
 }
 
-.nav_bar .top_menu > li:hover {
+.nav_bar .top_menu > li > a:hover {
   color: #ffffff;
 }
-.nav_bar .top_menu > li:hover::after {
+.nav_bar .top_menu > li > a:hover::after {
   content: "";
   display: block;
   position: relative;
