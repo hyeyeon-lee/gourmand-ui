@@ -120,6 +120,33 @@ body {
   display: block;
 }
 
+li#element ul {
+  list-style-type: none;
+}
+
+li#element > ul {
+  display: none;
+}
+
+li#element:hover > ul {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #999;
+  width: 1920px;
+  left: -1193px;
+  padding: 0;
+  justify-content: center;
+}
+
+li#element:hover > ul > li {
+  display: inline-block;
+  margin: 5%;
+}
+li#element:hover > ul > li > ul {
+  padding: 0;
+}
+
 .icons {
   padding-left: 0;
   padding-right: 38px;
