@@ -1,9 +1,24 @@
 const sideMenu = document.querySelector("ul.icons li:nth-child(2)");
+const menuIcon = document.querySelector("#menuIcon");
+menuIcon.addEventListener("mouseover", changeIcon);
+menuIcon.addEventListener("mouseleave", changeIcon);
 sideMenu.addEventListener("click", toggleSideMenu);
 
+function changeIcon() {
+  menuIcon.classList.toggle("fa-bars");
+  menuIcon.classList.toggle("fa-plus");
+}
+
+const aside = document.querySelector("aside");
 function toggleSideMenu() {
-  const aside = document.querySelector("aside");
   aside.style.display = "block";
+}
+
+const closeIcon = document.querySelector("#closeIcon");
+closeIcon.addEventListener("click", hideSideMenu);
+
+function hideSideMenu() {
+  aside.style.display = "none";
 }
 
 setInterval(slideMenu, 3000);
