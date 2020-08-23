@@ -688,9 +688,31 @@ footer .more_info .post_img div strong:hover {
     position: relative;
   }
 
-  .nav_bar {
+  .nav_bar .top_menu {
+    display: block;
+    background: #fff;
+    height: auto;
+  }
+  .ul.top_menu > li {
+    padding: 0;
+  }
+
+  .nav_bar .top_menu > li > a {
+    padding: 0 30px;
+    margin: 30px;
+  }
+  .nav_bar .top_menu > li > a:hover {
+    color: #939393;
+  }
+  .nav_bar .top_menu > li > a:hover::after {
     display: none;
   }
+
+  .nav_bar .top_menu > li:hover > .sub_menu,
+  .sub_menu li:hover > .sub_sub_menu {
+    display: none;
+  }
+
   .icons {
     display: none;
   }

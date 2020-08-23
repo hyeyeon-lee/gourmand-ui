@@ -1,3 +1,4 @@
+/* header */
 const sideMenu = document.querySelector("ul.icons li:nth-child(2)");
 const menuIcon = document.querySelector("#menuIcon");
 menuIcon.addEventListener("mouseover", changeIcon);
@@ -21,6 +22,16 @@ function hideSideMenu() {
   aside.style.display = "none";
 }
 
+const extendMenuIcon = document.querySelector("#extendMenuIcon");
+extendMenuIcon.addEventListener("click", extendMenu);
+
+function extendMenu() {
+  console.log(extendMenuIcon);
+  const navBar = document.querySelector(".nav_bar");
+  navBar.classList.toggle("hide");
+}
+
+/* main */
 setInterval(slideMenu, 3000);
 
 function slideMenu() {
