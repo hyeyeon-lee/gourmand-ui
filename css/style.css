@@ -71,9 +71,9 @@ body {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
   color: #999;
-  padding: 30px;
   left: -20px;
-  width: 200px;
+  width: 235px;
+  padding: 23px 0;
 }
 
 .sub_menu * {
@@ -81,16 +81,19 @@ body {
 }
 
 .sub_menu > li,
-.sub_sub_menu li {
-  margin: 10px;
+.sub_sub_menu > li {
+  cursor: pointer;
+  padding: 7px 30px;
 }
 
-.sub_menu > li a:hover,
 .sub_menu > li:hover,
-.sub_menu > li a:hover::after {
+.sub_menu > li:hover a,
+.sub_menu > li:hover a::after,
+.sub_sub_menu > li:hover {
   color: #c5b358;
 }
-.sub_menu > li:hover::before {
+.sub_menu > li:hover::before,
+.sub_sub_menu > li:hover::before {
   content: "─";
 }
 
@@ -108,12 +111,13 @@ body {
 
 .sub_sub_menu {
   display: none;
-  padding: 30px;
+  padding: 23px 0;
   background: rgba(0, 0, 0, 0.7);
   color: #999;
   position: absolute;
-  left: 260px;
-  width: 300px;
+  left: 100%;
+  width: 235px;
+  margin-top: -30px;
 }
 
 .sub_menu li:hover > .sub_sub_menu {
@@ -124,11 +128,11 @@ li#element ul {
   list-style-type: none;
 }
 
-li#element > ul {
+li#element > div {
   display: none;
 }
 
-li#element:hover > ul {
+li#element:hover > div {
   display: flex;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -139,11 +143,17 @@ li#element:hover > ul {
   justify-content: center;
 }
 
-li#element:hover > ul > li {
+li#element:hover > div > ul > li {
   display: inline-block;
-  margin: 5%;
 }
-li#element:hover > ul > li > ul {
+li#element:hover > div > ul {
+  padding: 35px 6% 30px;
+}
+li#element:hover > div > ul > li {
+  padding: 0 26px;
+  width: 24%;
+}
+li#element:hover > div > ul > li > ul {
   padding: 0;
 }
 
