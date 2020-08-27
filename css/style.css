@@ -81,7 +81,8 @@ body {
 }
 
 .sub_menu > li,
-.sub_sub_menu > li {
+.sub_sub_menu > li,
+li#element:hover > div > ul > li > ul > li {
   cursor: pointer;
   padding: 7px 30px;
 }
@@ -89,11 +90,13 @@ body {
 .sub_menu > li:hover,
 .sub_menu > li:hover a,
 .sub_menu > li:hover a::after,
-.sub_sub_menu > li:hover {
+.sub_sub_menu > li:hover,
+li#element:hover > div > ul > li > ul > li:hover {
   color: #c5b358;
 }
 .sub_menu > li:hover::before,
-.sub_sub_menu > li:hover::before {
+.sub_sub_menu > li:hover::before,
+li#element:hover > div > ul > li > ul > li:hover::before {
   content: "─";
 }
 
@@ -148,13 +151,25 @@ li#element:hover > div > ul > li {
 }
 li#element:hover > div > ul {
   padding: 35px 6% 30px;
+  width: 1200px;
 }
 li#element:hover > div > ul > li {
   padding: 0 26px;
   width: 24%;
+  box-sizing: border-box;
 }
 li#element:hover > div > ul > li > ul {
   padding: 0;
+}
+li#element:hover > div > ul > li > ul > li {
+  padding: 7px 0;
+}
+li#element:hover > div > ul > li > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #eee;
+  padding: 0 0 10px;
+  text-transform: uppercase;
 }
 
 .icons {
