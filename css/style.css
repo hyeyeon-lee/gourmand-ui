@@ -144,6 +144,7 @@ li#element:hover > div {
   left: -1193px;
   padding: 0;
   justify-content: center;
+  overflow: hidden;
 }
 
 li#element:hover > div > ul > li {
@@ -183,6 +184,25 @@ li#element:hover > div > ul > li > a {
   display: inline;
   padding: 0 10px;
   color: #fff;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+}
+
+#cartIcon:hover .tooltip {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 93px;
+  left: 1615px;
+  margin: 0;
+  cursor: default;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 30px 40px;
+  color: #999;
 }
 
 /* main */
