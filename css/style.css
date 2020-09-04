@@ -222,6 +222,7 @@ aside {
     #fff 0,
     #fff 6px
   );
+  z-index: 2;
 }
 
 aside * {
@@ -267,40 +268,67 @@ section article.first_slide {
   position: absolute;
 }
 
-.item1 {
+#firstSlide {
+  display: none;
+}
+#firstSlide .item1 {
   left: -8px;
   top: 412px;
 }
-
-.item2 {
+#firstSlide .item2 {
   right: -155px;
   top: 273px;
 }
-
-.item3 {
+#firstSlide .item3 {
   right: 54%;
   bottom: -108px;
 }
-
-.item4 {
+#firstSlide .item4 {
   right: -70px;
   top: 72px;
 }
-.item5 {
+#firstSlide .item5 {
   left: 97px;
   top: 72px;
 }
-.item6 {
+#firstSlide .item6 {
   left: 245px;
   top: 210px;
 }
-.item7 {
+#firstSlide .item7 {
   left: 245px;
   top: 306px;
 }
-.item8 {
+#firstSlide .item8 {
   right: 17%;
   top: 48%;
+}
+
+#secondSlide {
+}
+#secondSlide .item1 {
+  left: -72px;
+  top: -58px;
+}
+#secondSlide .item2 {
+  left: 12%;
+  top: 29%;
+}
+#secondSlide .item3 {
+  right: -150px;
+  top: 82px;
+}
+#secondSlide .item4 {
+  right: -67px;
+  top: 317px;
+}
+#secondSlide .item5 {
+  left: 17%;
+  top: 32%;
+}
+#secondSlide .item6 {
+  left: 15%;
+  top: -8px;
 }
 
 .first_slide div.center_title {
