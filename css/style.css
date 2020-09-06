@@ -305,6 +305,7 @@ section article.first_slide {
 }
 
 #secondSlide {
+  display: none;
 }
 #secondSlide .item1 {
   left: -72px;
@@ -329,6 +330,36 @@ section article.first_slide {
 #secondSlide .item6 {
   left: 15%;
   top: -8px;
+}
+
+#thirdSlide {
+}
+#thirdSlide .item1 {
+  bottom: -251px;
+  left: -69px;
+}
+#thirdSlide .item2 {
+  right: 0;
+  top: 52%;
+}
+#thirdSlide .item3 {
+  right: -32px;
+  top: 160px;
+}
+#thirdSlide .item4 {
+  right: -28px;
+  top: 46%;
+}
+#thirdSlide .item5 {
+  right: 16%;
+  top: 41%;
+}
+#thirdSlide .item6 {
+  left: 192px;
+  top: 10%;
+}
+#thirdSlide .item7 {
+  top: 5px;
 }
 
 .first_slide div.center_title {
