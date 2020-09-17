@@ -1,6 +1,23 @@
+:root {
+  /* size */
+  --font-size-h1: 32px;
+  --font-size-h2: 36px;
+  --font-size-h3: 18.72px;
+  --font-size-h5: 16px;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: 1.22em;
+}
+
+h5 {
+  font-size: var(--font-size-h5);
 }
 
 .sub_msg {
@@ -414,30 +431,33 @@ section article.first_slide {
   display: none;
 }
 
-.section {
-  width: 100wh;
+.article {
+  margin: 0 auto;
+  padding: 120px 75px;
+  background-color: #fff;
 }
 
-.who_section,
-.team_section,
-.story_section {
-  margin: 0 auto;
-  padding: 100px 40px;
-  background-color: #fff;
+.article > h2,
+.sub_msg {
+  padding: 15px 0;
+}
+
+.sub_msg + div {
+  padding-top: 40px;
 }
 
 .who_section .intro_container,
 .team_section .members_container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 70vw;
+  justify-content: center;
   padding-top: 70px;
   margin: 0 auto;
 }
 
 .box {
-  width: 23vw;
+  padding: 0 15px;
+  max-width: 450px;
 }
 
 .box img {
@@ -445,11 +465,14 @@ section article.first_slide {
 }
 
 .box h3 {
+  font-size: var(--font-size-h3);
   text-transform: uppercase;
+  padding: 50px 0 30px;
 }
 
 .box > p {
   color: #939393;
+  line-height: 1.8;
 }
 
 .skills_section {
@@ -575,10 +598,32 @@ section article.first_slide {
 }
 
 .team_section .members_container .member_info {
+  width: 430px;
   text-align: center;
+  padding: 0 20px;
 }
 .team_section .members_container img {
   border-radius: 50%;
+  max-width: 193px;
+}
+
+.member_info > * {
+  padding: 15px 0;
+}
+
+p.member_name {
+  font-size: var(--font-size-h5);
+}
+
+p.member_position {
+  color: #999999;
+  font-weight: bolder;
+}
+p.member_desc {
+  color: #999999;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: calc(var(--font-size-h5) * 0.9);
 }
 
 .last_img_section {
