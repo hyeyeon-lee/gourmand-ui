@@ -1,0 +1,12 @@
+{
+  "skills": {
+    "data": [
+      { "name": "gastronomy", "value": 76 },
+      { "name": "creativity", "value": 44 },
+      { "name": "culinary", "value": 65 },
+      { "name": "creativity", "value": 54 },
+      { "name": "culinary", "value": 87 },
+      { "name": "gastronomy", "value": 76 }
+    ]
+  }
+}

@@ -1,3 +1,9 @@
+fetch("../data/data.json")
+  .then((response) => response.json())
+  .then((data) => {
+    setSkillsHtml(data.skills.data);
+  });
+
 /* header */
 const sideMenu = document.querySelector("ul.icons li:nth-child(2)");
 const menuIcon = document.querySelector("#menuIcon");
@@ -42,4 +48,19 @@ function slideMenu() {
   ];
   const slideText = document.querySelector(".slide_image h1");
   slideText.innerHTML = textArray[Math.round(Math.random() * 2)];
+  /* const slideList = document.querySelector(".material");
+  slideList[Math.round(Math.random() * 2)].style.display = "none"; */
+}
+
+function setSkillsHtml(skills_data) {
+  const skills = document.querySelector(".skill_part");
+  skills.innerHTML = skills_data.map(getSkillsElement).join("");
+}
+
+function getSkillsElement(skill) {
+  return `<div>
+    <p>${skill.name} skill</p>
+    <p>${skill.value}%</p>
+    <div class="skill_level">
+  </div>`;
 }
