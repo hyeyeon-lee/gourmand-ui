@@ -38,19 +38,24 @@ function extendMenu() {
 }
 
 /* main */
-setInterval(slideMenu, 3000);
-
-function slideMenu() {
-  const textArray = [
-    "FOOD MADE WITH LOVE",
-    "THE BEST INGREDIENTS",
-    "THE LANGUAGE OF FOOD",
-  ];
-  const slideText = document.querySelector(".slide_image h1");
-  slideText.innerHTML = textArray[Math.round(Math.random() * 2)];
-  /* const slideList = document.querySelector(".material");
-  slideList[Math.round(Math.random() * 2)].style.display = "none"; */
+const SHOW_CLASS = "show";
+const firstSlide = document.querySelector("#firstSlide");
+function slide() {
+  const currentSlide = document.querySelector(`.slide_article.${SHOW_CLASS}`);
+  if (currentSlide) {
+    currentSlide.classList.remove(SHOW_CLASS);
+    const nextSlide = currentSlide.nextElementSibling;
+    if (nextSlide) {
+      nextSlide.classList.add(SHOW_CLASS);
+    } else {
+      firstSlide.classList.add(SHOW_CLASS);
+    }
+  } else {
+    firstSlide.classList.add(SHOW_CLASS);
+  }
 }
+slide();
+setInterval(slide, 2000);
 
 function setSkillsHtml(skills_data) {
   const skills = document.querySelector(".skill_part");
