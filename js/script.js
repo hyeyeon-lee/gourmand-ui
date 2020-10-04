@@ -56,6 +56,56 @@ function slide() {
 }
 slide();
 setInterval(slide, 2000);
+setSlideImageSize();
+
+function setSlideImageSize(type = 0) {
+  const images = document.querySelectorAll(".slide_article > img");
+  images.forEach((img) => {
+    const widthArr = img.dataset.ww
+      .slice(1, img.dataset.ww.length - 1)
+      .split(",");
+    const heightArr = img.dataset.hh
+      .slice(1, img.dataset.hh.length - 1)
+      .split(",");
+    img.setAttribute("width", widthArr[type].replace(/'/g, ""));
+    img.setAttribute("height", heightArr[type].replace(/'/g, ""));
+    img.setAttribute(
+      "style",
+      `width: ${widthArr[type].replace(/'/g, "")}; height:${heightArr[
+        type
+      ].replace(/'/g, "")};`
+    );
+  });
+}
+
+const mobileMatch = window.matchMedia("screen and (max-width: 480px)");
+const tabletMatch = window.matchMedia(
+  "screen and (min-width: 481px) and (max-width:1024px)"
+);
+const labtopMatch = window.matchMedia(
+  "screen and (min-width: 1025px) and (max-width:1440px)"
+);
+const labtopMatch2 = window.matchMedia("screen and (min-width: 1441px)");
+
+window.addEventListener("resize", resizeSlideImages);
+function resizeSlideImages() {
+  if (mobileMatch.matches) {
+    setSlideImageSize(3);
+    return;
+  }
+  if (tabletMatch.matches) {
+    setSlideImageSize(2);
+    return;
+  }
+  if (labtopMatch.matches) {
+    setSlideImageSize(1);
+    return;
+  }
+  if (labtopMatch2.matches) {
+    setSlideImageSize();
+    return;
+  }
+}
 
 function setSkillsHtml(skills_data) {
   const skills = document.querySelector(".skill_part");
