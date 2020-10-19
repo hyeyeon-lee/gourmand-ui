@@ -718,8 +718,9 @@ p.member_desc {
 
 .food {
   position: relative;
+  flex: 1 1 calc(25% - 10px);
   max-width: 430px;
-  min-width: 346px;
+  min-width: 290px;
   padding: 0 15px;
 }
 
