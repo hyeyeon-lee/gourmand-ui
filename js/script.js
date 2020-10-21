@@ -1,7 +1,8 @@
 fetch("../data/data.json")
   .then((response) => response.json())
   .then((data) => {
-    setSkillsHtml(data.skills.data);
+    setSkillsHtml(data.data.skills);
+    setStorysHtml(data.data.story);
   });
 
 /* header */
@@ -114,8 +115,41 @@ function setSkillsHtml(skills_data) {
 
 function getSkillsElement(skill) {
   return `<div>
-    <p>${skill.name} skill</p>
-    <p>${skill.value}%</p>
-    <div class="skill_level">
+  <p>${skill.name} skill</p>
+  <p>${skill.value}%</p>
+  <div class="skill_level">
   </div>`;
+}
+
+function setStorysHtml(storys_data) {
+  console.log(storys_data);
+  const storys = document.querySelector('.story_box');
+  storys.innerHTML = storys_data.map(getStorysElement).join("");
+}
+
+function getStorysElement(story) {
+  return ` <div class="food active">
+  <dl class="food_txt">
+    <dt>${story.name}</dt>
+    <dd>${story.desc}</dd>
+    <dd>${story.rate}</dd>
+  </dl>
+  <img
+    src="${story.img}"
+    alt="음식 이미지"
+  />
+</div>`;
+}
+
+const storyTab = document.querySelector('.story_tab ul');
+storyTab.addEventListener('click', onClickStoryTab);
+
+function onClickStoryTab(e) {
+  // 기존 active 없애기
+  const prevActive = document.querySelector('.active')
+  prevActive.classList.remove('active');
+
+  const target = e.target;
+  target.classList.toggle('active');
+  
 }
