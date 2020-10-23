@@ -3,6 +3,7 @@ fetch("../data/data.json")
   .then((data) => {
     setSkillsHtml(data.data.skills);
     setStorysHtml(data.data.story);
+    setEventListener(data.data);
   });
 
 /* header */
@@ -128,7 +129,7 @@ function setStorysHtml(storys_data) {
 }
 
 function getStorysElement(story) {
-  return ` <div class="food active">
+  return ` <div class="food">
   <dl class="food_txt">
     <dt>${story.name}</dt>
     <dd>${story.desc}</dd>
@@ -141,15 +142,26 @@ function getStorysElement(story) {
 </div>`;
 }
 
-const storyTab = document.querySelector('.story_tab ul');
-storyTab.addEventListener('click', onClickStoryTab);
+function setEventListener(data) {
+  const storyTab = document.querySelector('.story_tab ul');
+  storyTab.addEventListener('click', (e) => onClickStoryTab(e, data.story));
+}
 
-function onClickStoryTab(e) {
+function onClickStoryTab(e, data) {
   // 기존 active 없애기
   const prevActive = document.querySelector('.active')
   prevActive.classList.remove('active');
-
+  
   const target = e.target;
   target.classList.toggle('active');
+
+  const category = target.textContent;
+  let foods;
+  if(category !== 'show all') 
+    foods = data.filter((item) => item.type.includes(category))
+  else
+    foods = data;
+    
+  setStorysHtml(foods);
   
 }

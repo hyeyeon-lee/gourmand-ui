@@ -8,12 +8,12 @@
         { "name": "gastronomy", "value": 76 }
       ],
     "story" : [
-        { "name": "TASTE FOR LIFE", "type": ["DELICACIES", "GASTRONOMY"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-1.jpg"},
-        { "name": "DELICIOUS FOOD", "type": ["DELICACIES", "GASTRONOMY"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-2.jpg" },
-        { "name": "FRESH & TASTY", "type": ["DELICACIES", "GOURMET"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-3.jpg" },
-        { "name": "MESSY KITCHEN", "type": ["DELICACIES", "GOURMET"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-4.jpg" },
-        { "name": "FOOD IS LOVE", "type": ["DELICACIES", "GASTRONOMY"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-5.jpg" },
-        { "name": "BETTER TASTE", "type": ["DELICACIES", "GOURMET"]  , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-6.jpg"}
+        { "name": "TASTE FOR LIFE", "type": ["delicacies", "gastronomy"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-1.jpg"},
+        { "name": "DELICIOUS FOOD", "type": ["delicacies", "gastronomy"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-2.jpg" },
+        { "name": "FRESH & TASTY", "type": ["delicacies", "gourmet"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-3.jpg" },
+        { "name": "MESSY KITCHEN", "type": ["delicacies", "gourmet"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-4.jpg" },
+        { "name": "FOOD IS LOVE", "type": ["delicacies", "gastronomy"] , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-5.jpg" },
+        { "name": "BETTER TASTE", "type": ["delicacies", "gourmet"]  , "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inut ullamcorper leo, eget euismod orci", "rate": "★★★★☆", "img": "../asset/img/h1-port-f-img-6.jpg"}
       ]
   }
 }
