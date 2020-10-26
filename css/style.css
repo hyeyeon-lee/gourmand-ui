@@ -453,11 +453,6 @@ section article.slide_article {
   margin: 0 auto;
 }
 
-.box {
-  padding: 0 15px;
-  max-width: 450px;
-}
-
 .box img {
   width: 100%;
 }
@@ -920,30 +915,7 @@ footer .more_info .post_img div strong:hover {
   .icons {
     display: none;
   }
-}
-@media screen and (min-width: 1200px) {
-  .members_container {
-    display: flex;
-    justify-content: center;
-  }
-  .member_info {
-    display: inline-block;
-    max-width: 400px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .who_section .intro_container {
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
 
-  .who_section .intro_container .box {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
   .story_box {
     width: 100%;
   }
@@ -964,6 +936,31 @@ footer .more_info .post_img div strong:hover {
 
   footer .more_info dl:nth-child(odd) {
     margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .members_container {
+    display: flex;
+    justify-content: center;
+  }
+  .member_info {
+    display: inline-block;
+    max-width: 400px;
+  }
+  .box {
+    max-width: 450px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .who_section .intro_container {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .who_section .intro_container .box {
+    width: 100%;
   }
 }
 
@@ -996,6 +993,7 @@ footer .more_info .post_img div strong:hover {
     margin: 0 auto;
     width: auto;
   }
+
   .intro_txt {
     width: 90%;
   }
